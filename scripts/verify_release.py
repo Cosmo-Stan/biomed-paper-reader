@@ -43,7 +43,7 @@ def main():
         for item in manifest['files']:
             if digest(archive.read(item['path'])) != item['sha256']:
                 raise ValueError('ZIP file hash mismatch: ' + item['path'])
-    print(json.dumps({'status':'passed', 'version':'1.0-portable.1', 'package_files':len(manifest['files']), 'zip_sha256':expected}))
+    print(json.dumps({'status':'passed', 'version':'1.0-portable.2', 'package_files':len(manifest['files']), 'zip_sha256':expected}))
 
 if __name__ == '__main__':
     main()

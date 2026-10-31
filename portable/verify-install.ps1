@@ -40,7 +40,7 @@ if ($upstream.Count) { $upstreamStatus = 'entrypoints_found_not_runtime_tested' 
 if (-not $upstream.Count) { Write-Warning 'Paper2Agent missing: new-PDF preparation is unavailable. Existing reviewed resources can still be used. See references/portable.md for trusted-source installation guidance.' }
 if ($duplicates.Count) { Write-Warning 'Same-name project Skill found. Explicitly select the USER scope Portable SKILL.md; project files were not changed.' }
 $report = [ordered]@{
-    status='passed_software_checks_only'; version='1.0-portable.1'; install_path=$target;
+    status='passed_software_checks_only'; version='1.0-portable.2'; install_path=$target;
     package_files=$packageFiles; installed_files=$count; python_version=$python.version;
     dependencies='standard_library_only'; synthetic_test=$testResult;
     same_name_project_skills=$duplicates; paper2agent_status=$upstreamStatus; paper2agent_paths=$upstream;

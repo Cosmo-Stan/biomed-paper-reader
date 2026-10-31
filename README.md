@@ -1,20 +1,26 @@
 # Biomed Paper Reader
 
-**面向科研人员的中文导师式论文精读 Skill，附 Windows Portable 安装包。**
+**面向科研人员的遵循用户输出语言的导师式论文精读 Skill，附 Windows Portable 安装包。**
 
-A portable Codex skill for Chinese, mentor-style biomedical paper reading, traceable evidence, and an offline HTML reader.
+A portable Codex skill for language-aware, mentor-style biomedical paper reading, traceable evidence, and an offline HTML reader.
 
-版本：**1.0-portable.1**。内容和界面采用 v1.0 稳定基线。
+版本：**1.0-portable.2**。内容和界面采用 v1.0 稳定基线。
 
 ## 它做什么
 
-将已有、可追溯的论文资源组织为以科学问题推进的中文精读。三个视图共享同一份 `evidence.json`：
+将已有、可追溯的论文资源组织为以科学问题推进的导师式精读。三个视图共享同一份 `evidence.json`：
 
 - **B 研究全景**：科学问题、证据组及关系。
 - **A1 连续阅读**：导师式长文、内嵌证据与可展开背景。
 - **A2 左右对照**：实验解读与原始图像并排，可放大。
 
 提供速览、导师讲解和深度审查三种阅读深度，以及快速理解、研究级原理、数学或技术细节三级背景。HTML 和 Markdown 从同一受控内容生成；离线阅读不依赖 CDN、云服务或 Python。
+
+## 输出语言（1.0-portable.2）
+
+用户明确指定语言时优先遵循；否则跟随当前任务提示词的主要语言。例如，英文任务默认英文，中文任务默认中文，中文提示中要求“用英文输出”仍输出英文。HTML、Markdown、证据说明和审查说明保持一致；原图、原文引文和机器字段不被翻译覆盖。
+
+内置简体中文/英文界面；其他语言由代理提供完整标签译表。生成器负责呈现，代理负责科学内容的目标语言写作。见 [语言配置](portable/skill/biomed-paper-reader/references/output-language.md)。没有增加在线翻译服务。
 
 ## 科学边界
 
@@ -45,7 +51,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\portable\verify-instal
 
 ```text
 $biomed-paper-reader
-使用用户级 1.0-portable.1，读取 $HOME/.agents/skills/biomed-paper-reader/SKILL.md。
+使用用户级 1.0-portable.2，读取 $HOME/.agents/skills/biomed-paper-reader/SKILL.md。
 资料目录：<本篇论文资料目录>
 输出目录：<新的输出目录>
 沿用 v1.0 科研导师式规范，优先复用可核验资源；原始资料只读。
@@ -67,10 +73,12 @@ python .\portable\skill\biomed-paper-reader\scripts\smoke_test.py
 
 自检仅使用虚构材料，覆盖 1/3/12 章和 1/7/53 个图像及证据组。没有固定真实论文数量假设。
 
-已完成本机 Windows 安装、Codex 发现、虚构回归和 Edge 离线交互测试；**未在第二台实体 Windows 电脑验证**。完整范围见 [兼容性报告](portable/reports/compatibility.md)、[差异清单](portable/reports/differences.md) 与 [独立部署审查](portable/reports/independent-review.md)。这些报告记录部署检查，不代表新论文通过科学审查。
+已完成本机 Windows 安装、Codex 发现、虚构回归和 Edge 离线交互测试；**未在第二台实体 Windows 电脑验证**。旧版部署测试范围见 [兼容性报告](portable/reports/compatibility.md)、[差异清单](portable/reports/differences.md) 与 [独立部署审查](portable/reports/independent-review.md)。这些报告记录部署检查，不代表新论文通过科学审查。
 
-请通过 Issue 报告问题，并提供无敏感信息的最小虚构样例。不要提交论文 PDF、受限图像、患者资料、Zotero 数据、个人路径或密钥。`portable/` 是已验证的发布快照；后续变更请在新版本中开发并更新相应校验清单，不覆盖稳定基线。
+请通过 Issue 报告问题，并提供无敏感信息的最小虚构样例。不要提交论文 PDF、受限图像、患者资料、Zotero 数据、个人路径或密钥。`portable/` 是已验证的发布快照；后续变更请在新版本中开发并更新相应校验清单，不覆盖稳定基线。旧版 v1.0-portable.1 的 Git 标签及 Release 保留。
 
 ## 许可证与来源
 
 [MIT License](LICENSE)。本项目的通用指令、生成器、界面和安装工具在作者的科研阅读项目中借助 Codex 开发。Paper2Agent 为独立上游项目；本仓库不复制其实现，也不重新许可论文或其他第三方资料。论文内容、原图及数据的权利仍属于各自权利人。
+
+本次语言更新的测试范围见 [语言更新记录](portable/reports/language-update.md)。升级时先把旧安装移到 Skill 发现目录之外备份，再运行安装程序；不静默覆盖已安装版本。

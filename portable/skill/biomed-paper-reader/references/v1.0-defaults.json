@@ -1,6 +1,7 @@
 {
   "baseline": "biomed-paper-reader-v1.0",
-  "deployment_version": "1.0-portable.1",
+  "deployment_version": "1.0-portable.2",
+  "output_language": "explicit user instruction, otherwise current task prompt language",
   "style": "科研导师讲解型",
   "default_depth": 2,
   "depths": ["速览", "导师讲解", "深度审查"],

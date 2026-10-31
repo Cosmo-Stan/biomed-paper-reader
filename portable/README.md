@@ -1,6 +1,6 @@
 # Biomed Paper Reader v1.0 Portable
 
-部署版本 **1.0-portable.1**，内容与界面基线 **biomed-paper-reader-v1.0**。通用 Skill 包，不包含论文、个人审读历史、PDF、病例或上游仓库。科学内容规则不变，HTML/CSS/JS 模板与冻结版相同。
+部署版本 **1.0-portable.2**，内容与界面基线 **biomed-paper-reader-v1.0**。通用 Skill 包，不包含论文、个人审读历史、PDF、病例或上游仓库。科学内容规则及布局不变；显示文字按目标语言输出，CSS 与冻结版相同。
 
 ## 另一台 Windows 电脑：最简安装
 
@@ -25,7 +25,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\verify-install.ps1
 
 ```text
 $biomed-paper-reader
-使用用户级 Biomed Paper Reader 1.0-portable.1。
+使用用户级 Biomed Paper Reader 1.0-portable.2。
 请先读取 $HOME/.agents/skills/biomed-paper-reader/SKILL.md 和 version.json。
 论文资料位于：<本项目资料目录>；输出到：<本项目新的输出目录>。
 优先复用可核验的 Paper2Skill 资源；清点缺失的补充材料。
@@ -58,3 +58,7 @@ python "$HOME\.agents\skills\biomed-paper-reader\scripts\smoke_test.py" --output
 `SHA256SUMS.json` 覆盖解压包中的全部文件，唯独排除它本身、ZIP 和 ZIP 校验侧文件；Skill 内的 `skill-manifest.json` 覆盖其余所有 Skill 文件。ZIP 内不包含 ZIP 自身或校验侧文件。安装验证拒绝未列入清单的其他文件。添加笔记请放在包外。测试不会写入 Skill 目录。
 
 测试覆盖、实际完成与模拟边界见 [兼容性报告](reports/compatibility.md)，修改清单见 [版本差异](reports/differences.md)。没有在另一台实体 Windows 电脑验证；其他电脑须重跑验证。模板遗留的试点措辞和两位编号显示保留，不影响动态数量。不得据软件测试通过宣称科学内容已审读。
+
+## 输出语言更新
+
+1.0-portable.2 优先遵循用户明确指定的输出语言，否则跟随当前任务提示词的主要语言。正文与审查说明由代理按目标语言写作；生成器按 presentation.language 呈现内置中英文标签，其他语言需完整译表。原文引文、原图文字与机器字段保留。见 skill/biomed-paper-reader/references/output-language.md 和 reports/language-update.md。旧的兼容性与独立审查报告记录 .1 版本，不能冒充本次语言测试。

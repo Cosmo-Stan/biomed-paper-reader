@@ -3,6 +3,7 @@
 `evidence.json` 是唯一科学内容源，UTF-8。模板只负责呈现，不编写新结论。生成器拒绝断裂引用、路径逃逸、资产哈希变化、没有证据的关键段落。
 
 - `schema_version`: 1。
+- `presentation`（新任务必填，旧输入可省略）：`language` 为目标语言标签（zh-CN、en 等），可选 `labels` 完整译表、`audit_path` 审查报告相对路径。选择规则、其他语言和原文保留要求见 [输出语言配置](output-language.md)。
 - `paper`: `title`, `citation`, `doi`, `scope`, `status`, `intro`。
 - `sources[]`: `id`, `label`, `path`（相对于 evidence.json 父目录，或绝对路径）, `sha256`, `pages`, `page_sizes`（逐页宽高，PDF points）, `status`。规范化PDF应另记`original_path`/`original_sha256`以保留原始输入链；original_path 遵循同一相对路径规则。外部文献可用 `url` 和 `status`，不假装本地已读。
 - `assets[]`: `id`, `label`, `path`（输出内相对路径）, `sha256`, `source_id`, `source_sha256`, `page`, `bbox`, `dpi`, `width`, `height`。焦点裁图仍关联整图和原始页；不能只写一个不校验的source_id。

@@ -1,11 +1,16 @@
 {
   "algorithm": "SHA-256",
-  "version": "1.0-portable.1",
+  "version": "1.0-portable.2",
   "files": [
     {
       "path": "agents/openai.yaml",
-      "sha256": "a402b88d4d0ed6f4fb250f176fcff3176e8c1b20cd04486e9a551b6337385e38",
-      "bytes": 337
+      "sha256": "d9d5e815c71735b7d8468bf83a217b1f676752a5633215c93062cfe6f682118d",
+      "bytes": 420
+    },
+    {
+      "path": "assets/locales/en.json",
+      "sha256": "8d5b958ef4cae758b8d508d4da01cc56fc027312d6d6799a27702ce39a6a073d",
+      "bytes": 4858
     },
     {
       "path": "assets/reader.css",
@@ -19,18 +24,23 @@
     },
     {
       "path": "assets/reader.js",
-      "sha256": "8916fb14b3abb6d8b22cfb0eea5aa64299fb0566e47a1dde44fd39956e3f8885",
-      "bytes": 8686
+      "sha256": "7f3b3f4d16541814f3f0eb06de7213aa7a2e61cb42b457c4bd2b4453075501d8",
+      "bytes": 9084
     },
     {
       "path": "references/content-schema.md",
-      "sha256": "a6be723d9690758988353f2f36d0b4bcc8cc23aa17346004a511b701f094cdb8",
-      "bytes": 2767
+      "sha256": "355e4943c43d9a559df8b404d1559795678011b265faf3f2b9a5a98713159226",
+      "bytes": 3050
+    },
+    {
+      "path": "references/output-language.md",
+      "sha256": "a3e4a01194a03e0f55b4791f660856a508106cd40c82c4ca271397575515558c",
+      "bytes": 2314
     },
     {
       "path": "references/portable.md",
-      "sha256": "beea6be56696458f46d7b0048411c4fedef052aad185941c7efe477ff3fac8b5",
-      "bytes": 3383
+      "sha256": "3318c399cfb7b59743e27e4da5dac7153cf0d9a94a3dfae49e49603b65b88ca0",
+      "bytes": 3558
     },
     {
       "path": "references/scientific-review.md",
@@ -39,13 +49,18 @@
     },
     {
       "path": "references/v1.0-defaults.json",
-      "sha256": "4bc66f611f8b6e46315ca433031b6e0fc98c2140cff3fb157484bbf3dd596a0b",
-      "bytes": 936
+      "sha256": "c6aee0daa1c756a8d70dd189d53725872451289ab4acb434e1e4a2565e71bd2a",
+      "bytes": 1026
     },
     {
       "path": "scripts/build_reader.py",
-      "sha256": "b632ab50205436bae97b24353fc911fdd3374a381dbf91e896b22ce06e50289b",
-      "bytes": 7301
+      "sha256": "e55788a62298df29be0aec2909a4c1c8ade6ddd9de74395dcbece088850b5c02",
+      "bytes": 7874
+    },
+    {
+      "path": "scripts/localization.py",
+      "sha256": "895ccb93963b9d7abb71805fc51a55f715f9098d1e742ca123b8bb92dc64f5c3",
+      "bytes": 2999
     },
     {
       "path": "scripts/smoke_test.py",
@@ -53,14 +68,19 @@
       "bytes": 5007
     },
     {
+      "path": "scripts/test_language.py",
+      "sha256": "99364e220484649ef4d40e5c658010d9be2b3d330460d60c45e780e130542444",
+      "bytes": 5616
+    },
+    {
       "path": "SKILL.md",
-      "sha256": "a1721b4ce28717e23b450eae0650ba3c49e177b681f9c4a16671d419f809d350",
-      "bytes": 5061
+      "sha256": "729055e888779bf12dc66cc4a8d669a180a976b78b52b1da45f64a7f8b7e197f",
+      "bytes": 6290
     },
     {
       "path": "version.json",
-      "sha256": "475594ee8b8c932e3cc5ef6946664d0934dd27729076f12c7229697721726a9a",
-      "bytes": 264
+      "sha256": "7b7302657180f88992875cc354602eabd4ae2cb46eec20fd3c7700c18415414b",
+      "bytes": 288
     }
   ]
 }
