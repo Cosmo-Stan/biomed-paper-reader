@@ -1,0 +1,4 @@
+interface:
+  display_name: "生物医学增强论文阅读 v1.0 Portable"
+  short_description: "将可核验论文资源转换为中文导师式精读、证据对照与离线阅读器"
+  default_prompt: "使用 $biomed-paper-reader 将现有已核验论文资源制作成中文增强阅读器，保留证据定位和审查限制。"

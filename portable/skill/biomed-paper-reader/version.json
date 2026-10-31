@@ -1,0 +1,9 @@
+{
+  "name": "biomed-paper-reader",
+  "version": "1.0-portable.1",
+  "baseline": "biomed-paper-reader-v1.0",
+  "content_contract": 1,
+  "python_minimum": "3.9",
+  "runtime_dependencies": "Python standard library only",
+  "templates": "unchanged from frozen v1.0"
+}

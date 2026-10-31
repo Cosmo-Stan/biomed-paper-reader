@@ -1,0 +1,106 @@
+{
+  "algorithm": "SHA-256",
+  "version": "1.0-portable.1",
+  "files": [
+    {
+      "path": "install.ps1",
+      "sha256": "9994156645cabc62cf3aa6c8256416b0696480007d7ea89a33e6c80ef399c2a1",
+      "bytes": 2517
+    },
+    {
+      "path": "lib/common.ps1",
+      "sha256": "d58bdbc8ff730e4d750cb5727e42eb06ff049afc2143a6d02ce87db096a113db",
+      "bytes": 3228
+    },
+    {
+      "path": "README.md",
+      "sha256": "dff08997008824ee82acd03d3840a8fbb41781acdc52ee91ff0e1146fcbc69d7",
+      "bytes": 5542
+    },
+    {
+      "path": "reports/compatibility.md",
+      "sha256": "42da1898444a40f03d8ad712460afcd87fd07497a1334071d19a944cd53e2f6f",
+      "bytes": 6438
+    },
+    {
+      "path": "reports/differences.md",
+      "sha256": "cec09dbc4b2e0775783f4ef131f1d6ca97e66fcc62224dba85efcd1730df116d",
+      "bytes": 2739
+    },
+    {
+      "path": "reports/independent-review.md",
+      "sha256": "9056666e1d026d752e89296cd80639679d76c563d8bec14896441e46d3b53372",
+      "bytes": 1367
+    },
+    {
+      "path": "skill/biomed-paper-reader/agents/openai.yaml",
+      "sha256": "a402b88d4d0ed6f4fb250f176fcff3176e8c1b20cd04486e9a551b6337385e38",
+      "bytes": 337
+    },
+    {
+      "path": "skill/biomed-paper-reader/assets/reader.css",
+      "sha256": "e7617de30a9e34ea98e4ed164792bbfb745aa8236a0e6689a9f4d83358d0066b",
+      "bytes": 6717
+    },
+    {
+      "path": "skill/biomed-paper-reader/assets/reader.html",
+      "sha256": "2db6dfe14bad1d0b01eea3c05c4a1f80046fc0b9dd53902bad50682b56b808a7",
+      "bytes": 2209
+    },
+    {
+      "path": "skill/biomed-paper-reader/assets/reader.js",
+      "sha256": "8916fb14b3abb6d8b22cfb0eea5aa64299fb0566e47a1dde44fd39956e3f8885",
+      "bytes": 8686
+    },
+    {
+      "path": "skill/biomed-paper-reader/references/content-schema.md",
+      "sha256": "a6be723d9690758988353f2f36d0b4bcc8cc23aa17346004a511b701f094cdb8",
+      "bytes": 2767
+    },
+    {
+      "path": "skill/biomed-paper-reader/references/portable.md",
+      "sha256": "beea6be56696458f46d7b0048411c4fedef052aad185941c7efe477ff3fac8b5",
+      "bytes": 3383
+    },
+    {
+      "path": "skill/biomed-paper-reader/references/scientific-review.md",
+      "sha256": "8f80faf7d6b161c1d4c6565a65d6e3585205f65a8d86c9d805f10d78e8c1e175",
+      "bytes": 1856
+    },
+    {
+      "path": "skill/biomed-paper-reader/references/v1.0-defaults.json",
+      "sha256": "4bc66f611f8b6e46315ca433031b6e0fc98c2140cff3fb157484bbf3dd596a0b",
+      "bytes": 936
+    },
+    {
+      "path": "skill/biomed-paper-reader/scripts/build_reader.py",
+      "sha256": "b632ab50205436bae97b24353fc911fdd3374a381dbf91e896b22ce06e50289b",
+      "bytes": 7301
+    },
+    {
+      "path": "skill/biomed-paper-reader/scripts/smoke_test.py",
+      "sha256": "bb4dd6ca2f701bd17d8c49c937432701ae8b5e4879b8f17d43d0241c3c97e4a1",
+      "bytes": 5007
+    },
+    {
+      "path": "skill/biomed-paper-reader/skill-manifest.json",
+      "sha256": "c8c9bcabe278596eadacbdfbef5fcf0284f89792586d472af8249f8369a5214f",
+      "bytes": 2003
+    },
+    {
+      "path": "skill/biomed-paper-reader/SKILL.md",
+      "sha256": "a1721b4ce28717e23b450eae0650ba3c49e177b681f9c4a16671d419f809d350",
+      "bytes": 5061
+    },
+    {
+      "path": "skill/biomed-paper-reader/version.json",
+      "sha256": "475594ee8b8c932e3cc5ef6946664d0934dd27729076f12c7229697721726a9a",
+      "bytes": 264
+    },
+    {
+      "path": "verify-install.ps1",
+      "sha256": "0781f8ca561bbbddca7cbaaa69da7c976981388aa27424898ff09fc995396cb9",
+      "bytes": 4011
+    }
+  ]
+}

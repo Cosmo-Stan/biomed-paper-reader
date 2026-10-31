@@ -1,0 +1,16 @@
+{
+  "baseline": "biomed-paper-reader-v1.0",
+  "deployment_version": "1.0-portable.1",
+  "style": "科研导师讲解型",
+  "default_depth": 2,
+  "depths": ["速览", "导师讲解", "深度审查"],
+  "views": ["B研究全景", "A1连续阅读", "A2左右对照"],
+  "canonical_content": "evidence.json",
+  "schema_version": 1,
+  "background_levels": ["快速理解", "研究级原理", "数学或技术细节"],
+  "claim_kinds": ["原文转述", "结果", "作者解释", "AI推论", "外部知识"],
+  "scope": "由当前论文与用户指定，不固定图片、章节、证据组数量",
+  "source_policy": "原始资料只读；优先复用核验资源；区分文件、源文、独立审查、原始数据复算状态",
+  "future_changes": "另建版本及输出目录，不覆盖 v1.0",
+  "runtime": {"builder": "Python >=3.9 standard library; no optimized mode", "reader": "Modern Windows Edge/Chrome, offline local assets"}
+}
